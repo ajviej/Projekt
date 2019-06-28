@@ -1,0 +1,7 @@
+.jumbotron{
+    background: transparent image('hero2.jpg') no-repeat center center;
+    background-size: cover;
+    color:$gray-900;
+    text-shadow: 0 0 5px $white;
+    @include border-radius(0);
+}

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/bundle.min.css">
+
+  <title>Algebra Projekt</title>
+</head>
+
+<body class="home-page">
+  <!-- BEGIN NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-black sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        Algebra
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-right" href="#">Product</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVIGATION -->
+
+  <!--BEGIN HERO AREA-->
+  <div class="jumbotron text-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END HERO AREA-->
+
+  <!--BEGIN CONTENT-->
+  <main>
+    <section class="mb-5">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h1> Lorem ipsum dolor sit amet</h1>
+          <h6 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. </h6>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-4 ">
+            <article class="text-center">
+              <div class="icon-box mb-3 rounded-circle border">
+              <i class="fab fa-windows fa-3x text-primary" ></i></div>
+
+              <div class="mb-2">
+                Microsoft Windows is a group of several graphical operating system families, all of which are developed,
+                marketed and sold by Microsoft. Each family caters to a certain sector of the computing industry. Active
+                Microsoft Windows families include Windows NT and Windows IoT; these may encompass subfamilies, e.g.
+                Windows Server or Windows Embedded Compact (Windows CE). Defunct Microsoft Windows families include
+                Windows 9x, Windows Mobile and Windows Phone
+
+              </div>
+              <button type="button" class="btn btn-primary">Read more</button>
+            </article>
+          </div>
+
+
+          <div class="col-lg-4 ">
+              <article class="text-center">
+                <div class="icon-box mb-3 rounded-circle border">
+                <i class="fab fa-apple fa-3x text-primary" ></i></div>
+  
+                <div class="mb-2" >
+                    Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that
+                    designs, develops, and sells consumer electronics, computer software, and online services. It is
+                    considered one of the Big Four of technology along with Amazon, Google, and Facebook.[6][7]
+  
+                </div>
+                <button type="button" class="btn btn-primary">Read more</button>
+              </article>
+            </div>
+  
+
+
+            <div class="col-lg-4 ">
+                <article class="text-center">
+                  <div class="icon-box mb-3 rounded-circle border">
+                  <i class="fab fa-android fa-3x text-primary" ></i></div>
+    
+                  <div class="mb-2" >
+                      Android is a mobile operating system developed by Google. It is based on a modified version of the Linux
+                      kernel and other open source software, and is designed primarily for touchscreen mobile devices such as
+                      smartphones and tablets. In addition, Google has developed Android TV for televisions, Android Auto for
+                      cars, and Wear OS for wrist watches, each with a specialized user interface. 
+    
+                  </div>
+                  <button type="button" class="btn btn-primary">Read more</button>
+                </article>
+              </div>
+    
+  
+
+        </div>
+      </div>
+    </section>
+
+     <!-- BEGIN banner -->
+    <section class="banner first">
+
+
+
+    </section>
+  </main>
+
+  <!-- BEGIN LOGIN MODAL-->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <form id="loginForm" data-parsley-validate="true">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign In</h5>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your emal" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password"
+                placeholder="Enter your password" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Sign In</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- END LOGIN MODAL-->
+  <!-- JavaScript -->
+  <script src="/assets/js/bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      App.init({
+        login: true
+      });
+    });
+  </script>
+</body>
+
+</html>

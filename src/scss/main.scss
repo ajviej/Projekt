@@ -10,18 +10,23 @@
 @import
     'vendors/bootstrap/bootstrap-reboot.scss',
     'vendors/bootstrap/bootstrap.scss',
-    'vendors/bootstrap/bootstrap-grid.scss';
+    'vendors/bootstrap/bootstrap-grid.scss',
+    'vendors/parsley.scss';
 
 // 3. Base stuff
 @import
     'base/base',
     'base/fonts',
-    'base/typography';
+    'base/typography',
+    'base/background';
 
 // 4. Layout releated sections
 
 // 5. Components
+@import
+'components/jumbotron';
 
 // 6. Page specific styles
-
+@import
+'pages/home'
 // 7. Themes

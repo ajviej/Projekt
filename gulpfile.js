@@ -31,6 +31,7 @@ function css(){
             errorLogToConsole: devBuild,
             outputStyle: devBuild ? 'expanded' : 'compressed'
         })).on('error', sass.logError)
+        .pipe(concat('bundle.min.css'))
         .pipe(gulp.dest(out))
         .pipe(sync.stream());
 }
@@ -40,6 +41,7 @@ function js(){
 
     return gulp.src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/parsleyjs/dist/parsley.js',
         src + '/js/**/*'
     ])
     .pipe(newer(out))

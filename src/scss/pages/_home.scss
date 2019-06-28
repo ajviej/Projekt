@@ -1,0 +1,51 @@
+.home-page{
+    .subtitle{
+        position: relative;
+        &::after{
+            content:" "; 
+            display:block;
+            height:4px;
+            width:85%;
+            position: absolute;
+            left:50%;
+          transform: translateX(-50%);
+            bottom:-10px;
+            border-radius: 50%; //isto     @include border-radius(50%);
+            box-shadow:5px 5px 15px $blue;
+        }
+    }
+   
+
+ .icon-box{
+     width:100px;
+     height:100px;
+    margin:auto;
+     border:  solid 1px $blue;
+position: relative;
+
+i{
+    position: absolute;
+    top:50px;
+    left:0;
+    right:0;
+    transform:translateY(-50%);
+
+}
+    }
+
+
+    .banner{
+        height:467px;
+        padding: {
+            top:80px;
+            bottom:80px;
+        }
+
+        &.first{ //ako classa banner ima klasu first
+            background: transparent image('banner_first.jpg') no-repeat 0 0;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
+}
+
